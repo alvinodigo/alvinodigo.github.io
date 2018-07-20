@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+	font-size: 100%;
+	border: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a:hover,
+a:focus {
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+body {
+	font-family: 'Press Start 2P', cursive;
+	background-color: #000;
+}
+
+h1 {
+	margin: 30px 0 100px;
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+}
+
+ul li {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+ul li + li { margin-top: 20px; }
+ul li a {
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+}
