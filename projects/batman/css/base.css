@@ -16,6 +16,8 @@
 	box-sizing: border-box;
 }
 
+html { cursor: pointer; }
+
 body {
 	background-color: #fff;
 	transition: background 2s ease-in-out;
