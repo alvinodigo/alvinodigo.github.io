@@ -130,7 +130,7 @@ body {
 }
 .olho-esquerdo:before {
 	content: "";
-	width: 20px;
+	width: 19px;
 	height: 30px;
 	display: block;
 	position: absolute;
@@ -165,7 +165,7 @@ body {
 }
 .olho-direito:before {
 	content: "";
-	width: 20px;
+	width: 19px;
 	height: 30px;
 	display: block;
 	position: absolute;
