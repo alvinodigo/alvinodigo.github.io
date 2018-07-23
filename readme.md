@@ -1,5 +1,4 @@
 # alvinodigo.github.io
-A place to store my nerd stuff. And my jobs, of course. (cough cough)
 
 This is a page with some projects containing draws of famous characters from games, anime, movies and cartoons, all made by myself with only __CSS__ (I'm kidding, there are some HTML and JS. =D ), just for fun, to study and to practice __CSS__ techniques.
 
