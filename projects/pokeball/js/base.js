@@ -1,5 +1,5 @@
 /**
- * Insere a classe minecraft no body
+ * Insere as classes das diferentes pokebolas no body
  *
  * @return	void
  * @author	Alvino Rodrigues

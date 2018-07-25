@@ -1,5 +1,5 @@
 /**
- * Insere a classe minecraft no body
+ * Insere a classe darkness no body
  *
  * @return	void
  * @author	Alvino Rodrigues
