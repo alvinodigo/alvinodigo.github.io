@@ -133,7 +133,7 @@ a { color: #e3e3e3; }
 
 .projects-list li:hover img {
 	opacity: .7;
-	transform: scale(1.1);
+	transform: scale(1.02);
 }
 
 /* RODAPÉ */
