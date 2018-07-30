@@ -16,7 +16,7 @@
 	box-sizing: border-box;
 }
 
-body { background-color: #fff; }
+body { background-color: #ADD5F8; }
 
 .quadro {
 	width: 848px;
@@ -29,8 +29,8 @@ body { background-color: #fff; }
 	width: 256px;
 	height: 256px;
 	margin: 0 0 40px;
+	cursor: pointer;
 	position: relative;
-	background-color: #ddd;
 }
 .quadrado {
 	width: 16px;
