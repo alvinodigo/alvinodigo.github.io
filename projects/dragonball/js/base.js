@@ -6,8 +6,15 @@
  */
 
 function ativarClique() {
-	var contador = 0;
-	document.querySelector('.botao').addEventListener('click', function(e) {
+	var contador = 0,
+		_button = document.getElementById('audio-button'),
+		_radar = document.getElementById('audio-radar'),
+		_radarAtivado = document.getElementById('audio-radar-ativado');
+		// _button.volume = 0.05;
+		// _radarAtivado.volume = 0.1;
+
+	document.querySelector('.botao').addEventListener('click', function() {
+		_button.play();
 		var _body = document.body;
 
 		_body.className = '';
@@ -27,4 +34,28 @@ function ativarClique() {
 		}
 		contador++;
 	});
+
+	document.querySelector('.mute').addEventListener('click', function() {
+		if (this.classList.contains('active')) {
+			_radar.play();
+			tocarRadar();
+			this.classList.remove('active');
+		} else {
+			clearTimeout(loopRadar);
+			this.classList.add('active');
+		}
+	});
+
+	_radarAtivado.play();
+	tocarRadar();
+}
+
+function tocarRadar() {
+	var _radar = document.getElementById('audio-radar');
+	// _radar.volume = 0.05;
+
+	loopRadar = setTimeout(function() {
+		_radar.play();
+		tocarRadar();
+	}, 3000);
 }
