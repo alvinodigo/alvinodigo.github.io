@@ -444,6 +444,58 @@ body {
 	transition: opacity 2s ease-in-out;
 }
 
+/* AVISO SOBRE CLICAR */
+
+.disclaimer {
+	margin: 0 -10px;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+}
+.disclaimer > span,
+.disclaimer > a {
+	margin: 0 10px 10px;
+	padding: 2px 5px;
+	font-family: arial, sans-serif;
+	font-size: 11px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	display: block;
+	position: relative;
+	border-radius: 10px;
+	border: 10px solid #9D6D36;
+	background-color: #9D6D36;
+	transition: background 2s ease-in-out, border 2s ease-in-out, color 2s ease-in-out;
+}
+.disclaimer > a { text-decoration: underline; }
+.parafuso {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 50%;
+	border-radius: 50%;
+	border: 5px solid #9D6D36;
+	transform: translate(0,-50%);
+	background-color: #ccc;
+	transition: background 2s ease-in-out, border 2s ease-in-out;
+}
+.parafuso:after {
+	content: "";
+	width: 100%;
+	height: 2px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: #666;
+	transition: background 2s ease-in-out;
+}
+.parafuso-esquerdo { left: -14px; }
+.parafuso-esquerdo:after { transform: translate(-50%,-50%) rotate(25deg); }
+.parafuso-direito { right: -14px; }
+.parafuso-direito:after { transform: translate(-50%,-50%) rotate(120deg); }
+
 /* CAVALEIRO DAS TREVAS */
 
 body.darkness,
@@ -486,4 +538,13 @@ body.darkness .mascara:after {
 body.darkness .lua {
 	opacity: 1;
 	transition: opacity 4s ease-in-out 2s;
+}
+
+body.darkness .disclaimer > span,
+body.darkness .disclaimer > a,
+body.darkness .parafuso,
+body.darkness .parafuso:after {
+	color: #0e0e0e;
+	border-color: #0e0e0e;
+	background-color: #0e0e0e;
 }
