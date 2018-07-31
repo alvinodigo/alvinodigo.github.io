@@ -192,9 +192,9 @@ body { background-color: #fff; }
 	height: 30px;
 	position: absolute;
 	left: 0;
-	bottom: 19px;
+	bottom: 22px;
 	border-radius: 50%;
-	border-bottom: 3px solid #010001;
+	border-bottom: 0 solid #010001;
 	background-color: #fff;
 }
 .olho-esquerdo:before {
@@ -213,9 +213,9 @@ body { background-color: #fff; }
 	height: 30px;
 	position: absolute;
 	right: 0;
-	bottom: 19px;
+	bottom: 22px;
 	border-radius: 50%;
-	border-bottom: 3px solid #010001;
+	border-bottom: 0 solid #010001;
 	background-color: #fff;
 }
 .olho-direito:before {
@@ -242,7 +242,7 @@ body { background-color: #fff; }
 .olho-direito .iris { left: 7px; }
 
 .boca {
-	width: 150px;
+	width: 146px;
 	height: 63px;
 	position: absolute;
 	left: 50%;
@@ -250,14 +250,13 @@ body { background-color: #fff; }
 	overflow: hidden;
 	border-top: 6px solid #010001;
 	transform: translate(-50%,0);
-	border-radius: 20% 20% 0 0;
 }
 .boca:after {
 	content: "";
 	width: 150px;
 	height: 136px;
 	position: absolute;
-	left: 0;
+	left: -2px;
 	top: -82px;
 	border-radius: 50%;
 	border: 6px solid #010001;
