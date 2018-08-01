@@ -37,11 +37,10 @@ function ativarClique() {
 
 	document.querySelector('.mute').addEventListener('click', function() {
 		if (this.classList.contains('active')) {
-			_radar.play();
-			tocarRadar();
+			_radar.volume = 1;
 			this.classList.remove('active');
 		} else {
-			clearTimeout(loopRadar);
+			_radar.volume = 0;
 			this.classList.add('active');
 		}
 	});
